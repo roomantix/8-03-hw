@@ -57,15 +57,15 @@ backend web_servers    # секция бэкенд
 
 Скриншот 1: Решение задания 1
 
-![Скриншот 1](https://github.com/roomantix/8-03-hw/blob/main/images/1.png)
+![Скриншот 1](https://github.com/roomantix/8-03-hw/blob/master/images//1.png)
 
 Скриншот 2: Решение задания 1
 
-![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/main/images/2.png)
+![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/2.png)
 
 Скриншот 3: Решение задания 1
 
-![Скриншот 3](https://github.com/roomantix/8-03-hw/blob/main/images/3.png)
+![Скриншот 3](https://github.com/roomantix/8-03-hw/blob/master/images/3.png)
 
 
 
@@ -85,8 +85,8 @@ backend web_servers    # секция бэкенд
 
 Скриншот 1: Решение задания 2
 
-![Скриншот 1](https://github.com/roomantix/hw-03/blob/main/images/1.png)
+![Скриншот 1](https://github.com/roomantix/8-03-hw/blob/master/images/1.png)
 
 Скриншот 2: Решение задания 2
 
-![Скриншот 2](https://github.com/roomantix/hw-03/blob/main/images/2.png)
+![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/2.png)
