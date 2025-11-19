@@ -23,6 +23,53 @@
 - На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
 
+
+### Решение Задания 1
+- Запустите два simple python сервера на своей виртуальной машине на разных портах - скриншот 1,2
+- Установите и настройте HAProxy, воспользуйтесь материалами к лекции по [ссылке](2/)
+- Настройте балансировку Round-robin на 4 уровне.
+- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy - скриншот 3 , код после задания
+
+'''
+listen stats  # веб-страница со статистикой
+        bind                    :888
+        mode                    http
+        stats                   enable
+        stats uri               /stats
+        stats refresh           5s
+        stats realm             Haproxy\ Statistics
+
+frontend example  # секция фронтенд
+        mode http
+        bind :8088
+        #default_backend web_servers
+	acl ACL_example.com hdr(host) -i example.com
+	use_backend web_servers if ACL_example.com
+
+backend web_servers    # секция бэкенд
+        mode http
+        balance roundrobin
+        option httpchk
+        http-check send meth GET uri /index.html
+        server s1 127.0.0.1:8888 check
+        server s2 127.0.0.1:9999 check
+
+'''
+
+Скриншот 1: Решение задания 1
+
+![Скриншот 1](https://github.com/roomantix/8-03-hw/blob/main/images/1.png)
+
+Скриншот 2: Решение задания 1
+
+![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/main/images/2.png)
+
+Скриншот 3: Решение задания 1
+
+![Скриншот 3](https://github.com/roomantix/8-03-hw/blob/main/images/3.png)
+
+
+
 ### Задание 2
 - Запустите три simple python сервера на своей виртуальной машине на разных портах
 - Настройте балансировку Weighted Round Robin на 7 уровне, чтобы первый сервер имел вес 2, второй - 3, а третий - 4
@@ -31,6 +78,16 @@
 
 ### Решение
 
-Скриншот 1: Решение задания 1
+- Запустите три simple python сервера на своей виртуальной машине на разных портах - скриншот 1,2,3
+- Настройте балансировку Weighted Round Robin на 7 уровне, чтобы первый сервер имел вес 2, второй - 3, а третий - 4
+- HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
+- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.
+
+
+Скриншот 1: Решение задания 2
 
 ![Скриншот 1](https://github.com/roomantix/hw-03/blob/main/images/1.png)
+
+Скриншот 2: Решение задания 2
+
+![Скриншот 2](https://github.com/roomantix/hw-03/blob/main/images/2.png)
