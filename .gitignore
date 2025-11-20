@@ -2,4 +2,5 @@
 # Ignore the 'build' directory at the root level
     /~/
     ~/
-    /.*/
+    
+    /.vscode-root/
