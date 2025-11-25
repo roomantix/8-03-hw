@@ -28,9 +28,7 @@
 - Запустите два simple python сервера на своей виртуальной машине на разных портах - скриншот 1,2
 - Установите и настройте HAProxy, воспользуйтесь материалами к лекции по [ссылке](2/)
 - Настройте балансировку Round-robin на 4 уровне.
-- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy - скриншот 3 , код после задания
-
-[Конфигурационный файл](https://github.com/roomantix/8-03-hw/blob/master/config/haproxy.cfg)
+- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy - скриншот 3 , 4 [Конфигурационный файл](https://github.com/roomantix/8-03-hw/blob/master/config/haproxy.cfg)
 
 Скриншот 1: Решение задания 1
 
@@ -44,6 +42,10 @@
 
 ![Скриншот 3](https://github.com/roomantix/8-03-hw/blob/master/images/3.png)
 
+
+Скриншот 4: Решение задания 1
+
+![Скриншот 4](https://github.com/roomantix/8-03-hw/blob/master/images/8.png)
 
 
 ### Задание 2
@@ -111,7 +113,7 @@ backend web_servers    # секция бэкенд
         http-check send meth GET uri /index.html
         server s1 127.0.0.1:8888 check weight 2
         server s2 127.0.0.1:9999 check weight 3
-	server s3 127.0.0.1:1111 check weight 4
+		server s3 127.0.0.1:1111 check weight 4
 
 
 listen web_tcp
