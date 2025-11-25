@@ -62,7 +62,9 @@
 - На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него. - Скриншоты 4, 5, 6.
 
 [Конфигурационный файл haproxy](https://github.com/roomantix/8-03-hw/blob/master/config/haproxy1.cfg)
+
 [Конфигурационный файл nginx - site-enable](https://github.com/roomantix/8-03-hw/blob/master/config/examle-local.conf)
+
 [Конфигурационный файл nginx - upstream](https://github.com/roomantix/8-03-hw/blob/master/config/upstream.inc)
 
 Скриншот 1: Решение задания 2
