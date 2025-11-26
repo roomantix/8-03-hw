@@ -83,7 +83,7 @@
 
 Скриншот 5: Решение задания 2
 
-![Скриншот 5](https://github.com/roomantix/8-03-hw/blob/master/images/7.png)
+![Скриншот 5](https://github.com/roomantix/8-03-hw/blob/master/images/11.png)
 
 
 Скриншот 6: Решение задания 2
