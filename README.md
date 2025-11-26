@@ -74,18 +74,18 @@
 
 Скриншот 3: Решение задания 2
 
-![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/4.png)
+![Скриншот 3](https://github.com/roomantix/8-03-hw/blob/master/images/4.png)
 
 
 Скриншот 4: Решение задания 2
 
-![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/6.png)
+![Скриншот 4](https://github.com/roomantix/8-03-hw/blob/master/images/6.png)
 
 Скриншот 5: Решение задания 2
 
-![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/7.png)
+![Скриншот 5](https://github.com/roomantix/8-03-hw/blob/master/images/7.png)
 
 
 Скриншот 6: Решение задания 2
 
-![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/10.png)
+![Скриншот 6](https://github.com/roomantix/8-03-hw/blob/master/images/10.png)
