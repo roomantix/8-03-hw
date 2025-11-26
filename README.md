@@ -59,13 +59,10 @@
 - Запустите три simple python сервера на своей виртуальной машине на разных портах - скриншот 1,2,3
 - Настройте балансировку Weighted Round Robin на 7 уровне, чтобы первый сервер имел вес 2, второй - 3, а третий - 4
 - HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
-- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него. - Скриншоты 4, 5, 6.
+- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него. - Скриншоты 4, 5, 6, 7
 
 [Конфигурационный файл haproxy](https://github.com/roomantix/8-03-hw/blob/master/config/haproxy1.cfg)
 
-[Конфигурационный файл nginx - site-enable](https://github.com/roomantix/8-03-hw/blob/master/config/examle-local.conf)
-
-[Конфигурационный файл nginx - upstream](https://github.com/roomantix/8-03-hw/blob/master/config/upstream.inc)
 
 Скриншот 1: Решение задания 2
 
@@ -92,4 +89,6 @@
 ![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/7.png)
 
 
+Скриншот 7: Решение задания 2
 
+![Скриншот 2](https://github.com/roomantix/8-03-hw/blob/master/images/10.png)
